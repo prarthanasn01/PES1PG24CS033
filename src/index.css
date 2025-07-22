@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Header */
+.header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Try-On Display Area */
+.tryon-area {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.tryon-box {
+  width: 500px;
+  height: 500px;
+}
+
+/* All Glasses Container */
+.containerAll {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 0;
+}
+
+/* Individual Glasses Container */
+.container {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+/* Button Styling */
+.button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+/* Button Color Based on State */
+.button.active {
+  background-color: #f44336; /* red */
+}
+
+.button.inactive {
+  background-color: #4caf50; /* green */
+}
+
+/* Optional: Hover Effects */
+.button:hover {
+  filter: brightness(90%);
+}
+
+/* Info Panel Styling (below webcam) */
+.info-panel {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.color-options {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+.color-circle:hover {
+  border: 2px solid black;
+}
+
+/* Frame Info Panel */
+.info-panel {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.color-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.color-circle:hover {
+  border: 2px solid #000;
+}
+
+.info-label {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #333;
+  pointer-events: none;
+}
+
